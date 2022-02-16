@@ -10,6 +10,8 @@ import { RouterModule } from '@angular/router';
 import { PainelVagasComponent } from './painel-vagas/painel-vagas.component';
 import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './second/second.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { RodapeComponent } from './rodape/rodape.component';
     PainelVagasComponent,
     MenuComponent,
     RodapeComponent,
+    FirstComponent,
+    SecondComponent,
   ],
   imports: [
     BrowserModule,
