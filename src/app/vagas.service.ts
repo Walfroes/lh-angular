@@ -18,11 +18,11 @@ export class VagasService {
   cadastrarVaga(vaga: Vaga): Observable<Vaga[]> {
     return this._httpClient.post<Vaga[]>(this.url, vaga);
   }
-  atualizarVaga(id: any, Vaga: Vaga): Observable<Vaga[]> {
+  atualizarVaga(_id: any, Vaga: Vaga): Observable<Vaga[]> {
     const urlAtualizar = '${this.url}/${id}';
     return this._httpClient.put<Vaga[]>(urlAtualizar, Vaga);
   }
-  removerVaga(id: any): Observable<Vaga[]> {
+  removerVaga(_id: any): Observable<Vaga[]> {
     const urlDeletar = '${this.url}/${id}';
     return this._httpClient.delete<Vaga[]>(urlDeletar);
   }
