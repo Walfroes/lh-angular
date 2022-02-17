@@ -9,15 +9,14 @@ import { VagasService } from '../vagas.service';
 })
 export class MuralVagasComponent implements OnInit {
   public vagas: Vaga[] = [];
-  private _vagasService: any;
 
-  constructor(private_vagasService: VagasService) {}
+  constructor(private _vagasService: VagasService) {}
 
   ngOnInit(): void {
     this.listarVagas();
   }
   listarVagas() {
-    this._vagasService.getVagas().subscribe((retornaVaga: any[]) => {
+    this._vagasService.getVagas().subscribe((retornaVaga) => {
       this.vagas = retornaVaga.map((item) => {
         return new Vaga(
           item.id,
